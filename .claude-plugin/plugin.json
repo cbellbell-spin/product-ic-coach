@@ -1,0 +1,9 @@
+{
+  "name": "product-ic-coach",
+  "version": "0.1.0",
+  "description": "Thought partner for IC product managers. Pressure-tests product ideas, problem definitions, and solution thinking before investment. Grounded in PM craft principles — not leadership or leveling.",
+  "author": {
+    "name": "Chris Bell"
+  },
+  "keywords": ["product management", "IC PM", "thought partner", "product thinking"]
+}
