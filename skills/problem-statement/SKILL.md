@@ -1,14 +1,12 @@
 ---
 name: problem-statement
 description: >
-  Activate when the conversation is about defining, sharpening, or critiquing a specific problem
-  worth solving. Trigger phrases: "the problem is", "I want to solve", "here's the problem
-  statement", "is this the right problem", "draft a problem statement for", "is this a problem
-  or a symptom", "what problem are we actually solving", "scoping the problem", "we need a
-  problem statement for X".
-  Each problem statement is scoped to ONE problem and grounded in the customer-understanding
-  repository. One customer-context produces many problem statements over time. For macro-level
-  customer context, use customer-understanding.
+  Sharpen a single problem worth solving for a specific customer slice. Activate when defining,
+  scoping, or critiquing a problem statement. Trigger phrases: "the problem is", "I want to
+  solve", "here's the problem statement", "is this the right problem", "draft a problem statement
+  for", "is this a problem or a symptom", "what problem are we actually solving", "scoping the
+  problem". Grounded in customer-understanding (one profile, many problem statements). Forces
+  named out-of-scope. For macro customer context, use customer-understanding.
 ---
 
 # Problem Statement

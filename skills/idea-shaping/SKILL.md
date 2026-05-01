@@ -1,13 +1,12 @@
 ---
 name: idea-shaping
 description: >
-  Activate when the conversation is about a half-formed product idea — early, low-fidelity,
-  pre-problem-statement. Trigger phrases: "I have an idea", "what if we", "shape this idea",
-  "early-stage thought", "I've been thinking we should", "rough concept", "exploring the
-  problem space", "should we even consider X", "I'm not sure how to frame this yet".
-  This skill forces low-fidelity exploration before convergence and applies the double-diamond
-  rhythm conditionally. Hands off to problem-statement once the idea graduates into a specific
-  problem worth solving for a specific customer.
+  Activate when the conversation is about a half-formed product idea, pre-problem-statement.
+  Trigger phrases: "I have an idea", "what if we", "shape this idea", "early-stage thought",
+  "I've been thinking we should", "rough concept", "exploring the problem space", "should we
+  even consider X", "I'm not sure how to frame this yet". Forces crayon-level exploration and
+  applies the double-diamond rhythm. Produces three rough versions side-by-side. Hands off to
+  problem-statement once an idea graduates.
 ---
 
 # Idea Shaping

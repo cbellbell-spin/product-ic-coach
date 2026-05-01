@@ -1,15 +1,14 @@
 ---
 name: customer-understanding
 description: >
-  Activate when the conversation is about who the customer actually is, what they really need,
-  buyer-vs-user dynamics, the critical 15-20% that's mission-critical, picking the right customers,
-  or accumulating macro-level context about a segment or account. Trigger phrases: "I've been
-  talking to customers", "the customer wants", "we keep hearing", "who are we building for",
-  "what do we actually know about segment X", "update what we know about customer Y", "is this a
-  good-fit customer", "the buyer says X but the user does Y", "what's mission-critical to them",
-  "should we take this pilot", "summarize the customer context for X".
-  This is a MACRO-LEVEL skill that operates against a persistent repository. One customer-context
-  produces many problem statements over time. For specific problem definition, use problem-statement.
+  Macro-level, persistent customer-context repository. Activate when the conversation is about
+  who the customer actually is, buyer-vs-user dynamics, the mission-critical 15-20%, picking the
+  right customers, or capturing what's been learned from a segment or account. Trigger phrases:
+  "I've been talking to customers", "the customer wants", "we keep hearing", "who are we building
+  for", "what do we know about segment X", "update what we know about customer Y", "is this a
+  good-fit customer", "should we take this pilot". Builds a living repository other skills read
+  from — one customer profile, many problem statements over time. For specific problem definition,
+  use problem-statement.
 ---
 
 # Customer Understanding

@@ -1,14 +1,12 @@
 ---
 name: evidence-audit
 description: >
-  Activate when the conversation involves a claim about evidence — what we know, what customers
-  said, what the data shows, why we believe X. This skill grades signal quality and names the gap
-  between strength and how it's being treated. Trigger phrases: "we have evidence that",
-  "customers told us", "the data shows", "users have been asking", "I'm seeing strong signal",
-  "is this enough evidence", "audit my evidence", "how confident should I be in this", "we know
-  that X".
-  This is a CROSS-CUTTING lens — it audits evidence inside any other artifact (problem statement,
-  business case, brief, PRD). Critique-only — does not draft.
+  Cross-cutting critique-only lens. Grades signal quality and names the gap between how strong
+  evidence actually is and how the team is treating it. Activate when claims about evidence are
+  in play. Trigger phrases: "we have evidence that", "customers told us", "the data shows",
+  "users have been asking", "I'm seeing strong signal", "is this enough evidence", "audit my
+  evidence", "how confident should I be". Audits evidence inside any other artifact (problem
+  statement, business case, brief, PRD). Does not draft artifacts.
 ---
 
 # Evidence Audit

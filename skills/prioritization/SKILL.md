@@ -1,13 +1,12 @@
 ---
 name: prioritization
 description: >
-  Activate when the conversation is about ranking, sequencing, or sizing product investments —
-  what to build first, what comes off the list, capacity reality. Trigger phrases: "what should
+  Activate when ranking, sequencing, or sizing product investments. Trigger phrases: "what should
   we build first", "how do we prioritize", "should we do X or Y", "is this worth doing now",
-  "what comes off the list", "stack rank these", "we don't have capacity for everything",
-  "what would we trade off", "should we sequence X before Y".
-  Explicitly anti-RICE — uses Return × Risk × market-expectation lens. Surfaces the capacity
-  reality (often <20% available for new feature work).
+  "what comes off the list", "stack rank these", "we don't have capacity for everything", "what
+  would we trade off", "should we sequence X before Y". Uses Return / Risk / market-expectation
+  judgment, explicitly anti-RICE. Forces capacity reality (often under 20% available for new
+  feature work) and named tradeoffs. Snapshots are dated and append-only.
 ---
 
 # Prioritization

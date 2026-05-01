@@ -1,18 +1,13 @@
 ---
 name: product-ic-coach
 description: >
-  Activate when an IC PM is working through a product question and wants rigorous pressure-testing
-  before acting — but no specific lens (customer, evidence, problem, idea, prioritization, strategy,
-  brief, PRD, launch, adoption, metrics) has been signaled yet. Trigger phrases: "help me think
-  through this", "pressure test this", "I'm not sure if this is worth pursuing", "challenge me on
-  this", "I want to work through my thinking before I write the brief", "what am I missing here".
-  This is the generic entry point. When the conversation reveals a specific lens, surface the
-  relevant specialized skill (customer-understanding, problem-statement, evidence-audit,
-  idea-shaping, hypothesis-design, prioritization, product-strategy, business-case, product-brief,
-  prd, launch-readiness, adoption-as-signal, metrics-grounding, say-no, audience-translation,
-  engineering-partnership, review-prep-debrief).
-  NOT for: leadership decisions, org design, people management, leveling, or running an initiative
-  through a stage-gate process — use product-leadership-coach or sdlc-system for those.
+  Generic entry point for an IC PM who wants rigorous pressure-testing before acting, when no
+  specific PM-craft lens has been signaled yet. Trigger phrases: "help me think through this",
+  "pressure test this", "I'm not sure if this is worth pursuing", "challenge me on this",
+  "I want to work through my thinking before I write the brief", "what am I missing here".
+  Runs the Phase 1 / Phase 2 / Land mechanics and routes to specialized skills (customer-understanding,
+  problem-statement, evidence-audit, idea-shaping, prioritization, etc.) when the lens becomes clear.
+  NOT for: leadership decisions, org design, people management, leveling, or stage-gate execution.
 ---
 
 # Product IC Coach — Umbrella
