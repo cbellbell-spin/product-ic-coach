@@ -9,11 +9,14 @@ Not for: people management, org design, leadership decisions, or leveling conver
 - **Umbrella skill** (`product-ic-coach`) — generic entry point; runs the Phase 1 / Phase 2 / Land coaching mechanics; routes to specialized skills when a specific lens is in play.
 - **Specialized skills** — each tied to a specific framework from Chris's PM operating manual. Most support both **critique** (pressure-test an existing draft) and **draft** (produce an artifact in Chris's format). A few are critique-only (e.g., `evidence-audit`, `adoption-as-signal`).
 - **Persistent memory** — the plugin maintains its own state across sessions in `~/Documents/pm-coach/`. Customer context accumulates over time; problem statements, briefs, PRDs, hypotheses, prioritization snapshots are written to predictable paths and updated rather than re-created.
+- **Session artifacts (Mann pattern)** — each problem slug carries `brief.md` (coaching spec) and `decisions.md` (append-only editorial log). `/open` loads these at session start; `/close` deposits the session's decisions. The umbrella auto-triggers `/open` when a known slug is referenced.
 
 ## Commands
 
 | Command | What it does |
 |---------|-------------|
+| `/open [slug]` | Session-start ritual — load brief + decisions for a problem, surface state, skip Phase 1 warm-up |
+| `/close` | Session deposit — reflector pass, propose decisions.md entries, ask if brief needs updating |
 | `/think` | Return to Phase 1 Socratic mode |
 | `/challenge` | Flip adversarial — steelman the opposition and attack the current position |
 | `/harder` | The pushback wasn't hard enough. Go further |
@@ -45,7 +48,7 @@ The plugin reads and writes to `~/Documents/pm-coach/` — a structured tree of 
 ~/Documents/pm-coach/
 ├── INDEX.md                              # auto-maintained table of contents
 ├── customer-context/<segment-or-account>/{profile.md, log.md}
-├── problems/<slug>/{problem-statement.md, notes.md, links.md}
+├── problems/<slug>/{brief.md, decisions.md, problem-statement.md, notes.md, links.md}
 ├── strategies/<area>/{strategy.md, notes.md}
 ├── briefs/<area>/{product-brief.md, notes.md}
 ├── business-cases/<slug>/{business-case.md, notes.md}

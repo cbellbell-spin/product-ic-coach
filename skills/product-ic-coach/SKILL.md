@@ -83,13 +83,32 @@ If the user proceeds without invoking, stay in the umbrella and apply the skill'
 
 ---
 
-## Plugin Memory
+## Session Artifacts (Mann Pattern)
 
-This plugin maintains persistent memory across sessions. Specialized skills read and write to a structured directory tree (default: `~/Documents/pm-coach/`). The umbrella does not produce artifacts itself, but should be aware of memory and surface relevant existing files when a session starts.
+Each problem slug carries three persistent artifacts that survive across sessions:
 
-When a session begins, if the user references something that may already exist in memory ("the brief for X", "the X problem"), read the relevant `INDEX.md` and existing artifact(s) before engaging. Don't re-ask what's already established.
+- **`brief.md`** — the coaching spec: what we're trying to figure out, working hypothesis, constraints, open questions. Written at problem start; sharpens over time.
+- **`decisions.md`** — append-only editorial log: what was settled, what was rejected and why, what remains open. Written via `/close` at session end.
+- **`problem-statement.md`** — the output artifact (produced by the `problem-statement` skill when ready).
 
-Memory rules every skill in this plugin follows (see plugin README for full detail):
+These live at `~/Documents/pm-coach/problems/<slug>/`.
+
+### Session-Start Auto-Open
+
+When a session begins and the PM references a named problem or slug (e.g., "let's work on the retention-workflow thing", "pick up where we left off on pricing"), **automatically run the `/open` ritual before engaging**:
+
+1. Resolve the slug from the reference or `INDEX.md`
+2. Read `brief.md` + `decisions.md`
+3. Surface state in 3–4 sentences (what's settled, what's rejected, what's live)
+4. Ask where they want to pick up
+
+Do not begin Phase 1 from scratch if a slug can be resolved. The brief and decisions log already contain what Phase 1 would re-derive.
+
+If no slug can be resolved (genuinely new problem, no prior history), proceed normally with Phase 1 and suggest creating a new problem slug: *"Want to name this problem so I can track it across sessions? `/open <slug>` will scaffold the brief."*
+
+### Plugin Memory Rules
+
+Specialized skills read and write to `~/Documents/pm-coach/`. The umbrella does not produce artifacts itself, but surfaces relevant existing files at session start.
 
 - **Read first, then engage.** Load relevant artifacts before pressing on with new questions.
 - **Update, don't duplicate.** When a slug/topic exists, update the canonical file rather than creating a new one.
@@ -111,6 +130,20 @@ Examples:
 - *"If you're not sure yet, `/stuck` will keep us here longer."*
 - *"When you're ready to land somewhere, try `/land`."*
 - *"Want to switch to draft mode? `/draft` flips a specialized skill if it supports drafting."*
+
+### /close Suggestion Triggers
+
+Suggest `/close` — one quiet line — when any of these appear:
+
+- The PM signals they're wrapping up: "I think I'm good", "that's helpful", "I'll take it from here"
+- `/land` just produced a synthesis
+- `/solid` was just invoked on a named problem
+- `/reset` is about to be invoked on a named problem (suggest closing before clearing)
+- A full Phase 1 → Phase 2 → Land arc has completed on a named problem
+
+Suggestion format: *"Ready to log this? `/close` will capture what was settled before you go."*
+
+Do **not** suggest `/close` if: no slug is in play, the session was short or purely exploratory, or `/quiet` is active.
 
 If `/quiet` has been invoked, suppress all command suggestions until `/quiet` is invoked again.
 
