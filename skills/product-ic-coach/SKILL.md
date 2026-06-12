@@ -5,8 +5,11 @@ description: >
   specific PM-craft lens has been signaled yet. Trigger phrases: "help me think through this",
   "pressure test this", "I'm not sure if this is worth pursuing", "challenge me on this",
   "I want to work through my thinking before I write the brief", "what am I missing here".
-  Runs the Phase 1 / Phase 2 / Land mechanics and routes to specialized skills (customer-understanding,
-  problem-statement, evidence-audit, idea-shaping, prioritization, etc.) when the lens becomes clear.
+  Runs the Phase 1 / Phase 2 / Land mechanics and routes to the 5 live specialized skills
+  (customer-understanding, problem-statement, evidence-audit, idea-shaping, prioritization)
+  when the lens becomes clear. For lenses on the roadmap but not yet shipped (PRD, product brief,
+  business case, launch readiness, signal reports, metrics, engineering handoff, review prep,
+  etc.) see `ROADMAP.md` — most of these live in the SDLC system when built.
   NOT for: leadership decisions, org design, people management, leveling, or stage-gate execution.
 ---
 
@@ -61,19 +64,13 @@ Surface the right skill when you hear:
 | Whether a problem is the right problem, root vs symptom, scoping a problem statement | `problem-statement` |
 | Whether evidence is strong enough, observation vs interpretation, vocal vs representative | `evidence-audit` |
 | Crayon-level shaping, double-diamond divergence, "I have an idea, what should I do with it" | `idea-shaping` |
-| Designing a falsifiable test, Theory→Hypothesis→Experiment, MVP design | `hypothesis-design` |
 | Stack-ranking, what comes off the list, return × risk × market expectation, capacity reality | `prioritization` |
-| Target market, core problem, competitive landscape, value prop, business goals | `product-strategy` |
-| Rough business case, asking for greenlight to learn, two-pager investment ask | `business-case` |
-| Quarterly product brief, translating strategy into team direction | `product-brief` |
-| Writing or critiquing a PRD with locked vs partner-open vs exploratory tiers | `prd` |
-| Whether sales can sell, buyers understand why, users can adopt | `launch-readiness` |
-| Why adoption is missing — product, training, change-management, wrong-buyer | `adoption-as-signal` |
-| North-star metrics, ops-to-business-outcome confidence, vanity metrics | `metrics-grounding` |
-| Constructing a defensible "no" with reason / alternative / tradeoff | `say-no` |
-| Producing exec / engineer / customer / frontline versions of the same message | `audience-translation` |
-| Bringing a fuzzy concept to engineering, boxes-and-arrows level | `engineering-partnership` |
-| Prepping for or debriefing a review or 1:1 | `review-prep-debrief` |
+
+For lenses on the roadmap but not yet shipped (PRD, product brief, business case, launch
+readiness, signal reports, metrics, engineering handoff, review prep, etc.), see `ROADMAP.md`.
+When the conversation hits a roadmap lens, point the PM to the right destination — for most
+of these, that's the SDLC system (`sdlc-system`); for org-level strategy and review prep,
+it's the leadership coach (`product-leadership-coach`).
 
 Surface format (one line, dropped at the end of your response):
 

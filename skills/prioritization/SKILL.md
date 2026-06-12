@@ -13,9 +13,11 @@ description: >
 
 Stack-rank product investments using **judgment**, not formula. RICE and other scoring frameworks are gameable, subjective enough to produce almost any answer, and tend to optimize for things that are easy to score rather than things that actually matter. This skill uses three lenses — Return, Risk, and market expectation — and forces explicit reasoning that can be defended.
 
+Uses the umbrella's Phase 1 → Phase 2 → Land mechanics, scoped to ranking investments.
+
 ## Modes
 
-- **Critique** (default when an existing prioritization is on the table) — pressure-test the reasoning, not the rankings.
+- **Critique** (default) — pressure-test the reasoning, not the rankings.
 - **Draft** — produce a dated snapshot with rankings and the reasoning behind each.
 
 ## When to use
@@ -25,15 +27,13 @@ Stack-rank product investments using **judgment**, not formula. RICE and other s
 - A new high-pressure ask is in play and something has to come off to make room.
 - The capacity of the team isn't matching the size of the list.
 
-## How to use
-
-### Read first
+## Lens-specific Read first
 
 If a prioritization snapshot for this context exists in `~/Documents/pm-coach/prioritization/`, read the most recent one. Snapshots are append-only — stack ranks decay fast and the history of what we chose to do (and didn't) is useful signal. Surface the prior ranking and ask what's changed.
 
 Also read relevant `briefs/<area>/product-brief.md` (if applicable) and `customer-context/` entries for the segments the items affect — prioritization that floats free of customer context is usually wrong.
 
-### The three lenses
+## The three lenses
 
 For every candidate item, force the PM to articulate:
 
@@ -56,17 +56,14 @@ For every candidate item, force the PM to articulate:
 
 These lenses don't produce a number. They produce a position the PM can defend.
 
-### Capacity reality
+## Capacity reality
 
 Before ranking, force the capacity check:
-
 - What's actual engineering capacity — accounting for bug fixes, on-call, technical debt, infrastructure maintenance, and keeping existing products running?
 - Most teams have **less than 20%** of their nominal capacity actually available for new feature work. Confirm or refute.
 - Frame the conversation as **"what are we choosing to do with the capacity we have,"** not "why can't we build more things."
 
-### Critique mode (Phase 1 / Phase 2 / Land)
-
-**Phase 1 — Surface the reasoning, not the rankings:**
+## Lens-specific Phase 1 questions
 
 For each candidate (or at least the contested ones):
 - Walk me through Return — who feels this, how strongly, how representative is the segment?
@@ -74,9 +71,8 @@ For each candidate (or at least the contested ones):
 - Walk me through market expectation — how broad is the demand, how long-standing, what's the cost of "not now"?
 - What's the explicit tradeoff if this comes on — what comes off, and who notices?
 
-**Phase 2 — Challenge:**
+## Lens-specific Phase 2 challenges
 
-Common vulnerabilities in prioritization:
 - **Score-as-judgment.** A formula produced the ranking; the PM hasn't actually defended it.
 - **Loud-customer prioritization.** One vocal account's ask treated as segment-level demand.
 - **Capacity denial.** Stack rank assumes more available capacity than exists. Items below the line will quietly never ship.
@@ -92,11 +88,9 @@ Phrasing examples:
 - *"You've got ten items above the line. Capacity supports four. Which six are you implicitly killing, and is anyone aware of that?"*
 - *"You haven't put a single eng investment on this list. What's the story you're telling yourself about why that's safe?"*
 
-**Phase 3 — Land:**
+When `/land` is invoked: state (1) the top items by judgment, with one sentence of reasoning per lens for each, (2) what comes off — explicitly — and what the cost of that is, (3) the capacity assumption being made and whether it holds, (4) the eng investments that need legibility, (5) the items most likely to slip if the team is over-allocated.
 
-State: (1) the top items by judgment, with one sentence of reasoning per lens for each, (2) what comes off — explicitly — and what the cost of that is, (3) the capacity assumption being made and whether it holds, (4) the eng investments that need legibility, (5) the items most likely to slip if the team is over-allocated.
-
-### Draft mode
+## Draft mode
 
 Produce a dated `prioritization/<yyyy-mm-dd>-<context>/snapshot.md`:
 
@@ -119,22 +113,18 @@ Produce a dated `prioritization/<yyyy-mm-dd>-<context>/snapshot.md`:
 ...
 
 ## Coming off the list
-
 Items that were considered and are explicitly NOT in scope this round:
 - <item>: <why off — capacity / judgment / sequencing>
 
 ## Eng investments included
-
 <List the reliability / performance / debt items that are in scope, with their value made legible.>
 
 ## Risks
-
 - <Capacity risk if X slips>
 - <Market risk if Y is later than expected>
 - <Customer risk if Z stays off the list>
 
 ## What changed since the previous snapshot
-
 <Brief diff against the prior ranking — what moved, what came on, what came off, why.>
 ```
 
@@ -148,6 +138,10 @@ Items that were considered and are explicitly NOT in scope this round:
     └── snapshot.md       # one snapshot per round; do NOT overwrite prior
 ```
 
+## Handoff to SDLC
+
+When the prioritization is solid and ready to become a decision, point the PM to the SDLC system: *"When you're ready to formalize, run `/pd-resume <slug>` in `sdlc-system` and walk this into Gate 2A (Prioritize/Park/Kill)."* Prioritization is the *thinking* that precedes the gate; the gate is the *decision*.
+
 ## External context (MCP-aware)
 
 - **`~~tickets`** — when items are tracked elsewhere, fetch the current state. Don't duplicate; reference and summarize.
@@ -155,7 +149,7 @@ Items that were considered and are explicitly NOT in scope this round:
 - **`~~analytics`** — verify Return claims against actual usage and outcome data.
 - **`~~chat`** — when a Slack thread is the source of an inbound ask, fetch and summarize.
 
-## Anti-patterns this skill names
+## Anti-patterns
 
 - **RICE-as-decision.** Formula-driven ranking that the PM can't actually defend.
 - **Capacity fiction.** Stack rank that assumes more available engineering than exists.
@@ -165,7 +159,3 @@ Items that were considered and are explicitly NOT in scope this round:
 - **No-tradeoff rosters.** A list with everything in and nothing out.
 - **Eng-investment invisibility.** Reliability and debt-reduction never make the list because they don't have a customer "asking" for them.
 - **Snapshot rewriting.** Editing a past ranking instead of producing a new dated one.
-
-## Tone
-
-Direct. Forces the PM to defend the ranking with judgment, not numbers. Names tradeoffs explicitly — every yes is a no to something else, and that something else needs to be visible. When the math (or formula) is doing the thinking, surface it: *"What's your actual position, in your own words?"*

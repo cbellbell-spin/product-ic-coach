@@ -13,10 +13,12 @@ description: >
 
 Take a half-formed idea through low-fidelity exploration before letting the team converge. The default failure mode is over-investing in a polished version of the first idea that seems to work. This skill prevents that by forcing **crayon-level** thinking and applying the **double diamond** rhythm — diverge on the problem, converge, then diverge on the solution, converge.
 
+Uses the umbrella's Phase 1 → Phase 2 → Land mechanics, scoped to early-stage idea exploration.
+
 ## Modes
 
-- **Critique** (default when an idea is already on the table) — Phase 1/2/Land scoped to whether the idea has been shaped enough to invest further.
-- **Draft** (when invoked or asked) — produce three crayon-level versions of the idea side-by-side and surface the diamond phase the team is in.
+- **Critique** (default) — scoped to whether the idea has been shaped enough to invest further.
+- **Draft** (when invoked) — produce three crayon-level versions of the idea side-by-side and surface the diamond phase the team is in.
 
 ## When to use
 
@@ -24,17 +26,13 @@ Take a half-formed idea through low-fidelity exploration before letting the team
 - An existing draft is already polished but the underlying idea hasn't been stress-tested for whether it's worth pursuing.
 - The team is converging too fast (or too slow) and the diamond rhythm is off.
 
-## How to use
-
-### Read first
+## Lens-specific Read first
 
 If a problem slug is already in the conversation, check `~/Documents/pm-coach/problems/<slug>/notes.md` for prior shaping. Pre-graduation crayon explorations live under an "Early shapes" header in that file.
 
 If no slug exists yet, this is pre-graduation territory. Capture inline; once an idea graduates into a problem worth statement-ing, hand off to `problem-statement` (which creates `problems/<slug>/`).
 
-### Critique mode (Phase 1 / Phase 2 / Land)
-
-**Phase 1 — Surface the idea, not the polish:**
+## Lens-specific Phase 1 questions
 
 - Describe this in two sentences a four-year-old would understand. What is it? Who's it for?
 - What's the failure mode if you build the polished version of this and it doesn't land?
@@ -42,9 +40,8 @@ If no slug exists yet, this is pre-graduation territory. Capture inline; once an
 - What three different shapes could this take? Give me the simplest, the most ambitious, and one that comes from a different angle.
 - Where's the pull toward the first idea coming from — investment, sunk cost, someone's enthusiasm? What would it take to genuinely consider an alternative?
 
-**Phase 2 — Challenge:**
+## Lens-specific Phase 2 challenges
 
-Common vulnerabilities at the shaping stage:
 - **Polish over fidelity.** The team is iterating on visuals or copy when the underlying idea hasn't been crayon-tested.
 - **First diamond skipped.** Converging on a solution before genuinely opening the problem space. The question "what is the problem actually?" hasn't been opened up.
 - **Convergence without rigor.** Diverging endlessly without picking a problem to solve or a solution shape to test. Interesting thinking, nothing ships.
@@ -54,11 +51,9 @@ Common vulnerabilities at the shaping stage:
 
 Ground challenges in specifics. Example: *"You've described the polished version three times now. We haven't touched the question of whether this is one problem or three. Slow down — what's the simplest crayon version that captures the core?"*
 
-**Phase 3 — Land:**
+When `/land` is invoked: state (1) the diamond phase the team is actually in, (2) the strongest version of the idea after challenge, (3) what would change your mind, (4) the next move — graduate to a problem statement, run a hypothesis test, kill it, or stay in shaping.
 
-State: (1) the diamond phase the team is actually in, (2) the strongest version of the idea after challenge, (3) what would change your mind, (4) the next move — graduate to a problem statement, run a hypothesis test, kill it, or stay in shaping.
-
-### Draft mode
+## Draft mode
 
 Produce three crayon-level versions. Each is two sentences max plus one line of "what would change my mind" and one line of "what's different about this version."
 
@@ -117,7 +112,7 @@ Until those four hold, stay in shaping.
 
 Light touch — at the shaping stage, too much context contaminates divergence. Pull only when the PM explicitly references a source.
 
-## Anti-patterns this skill names
+## Anti-patterns
 
 - **Polish-first.** Building a finished mockup or doc before the idea has been crayon-tested.
 - **Single-shape commitment.** One version of the idea has been written up; alternatives haven't been seriously considered.
@@ -125,7 +120,3 @@ Light touch — at the shaping stage, too much context contaminates divergence. 
 - **Endless divergence.** Lots of options, no convergence, nothing testable.
 - **Investment-as-validation.** "We've already put work into this version" treated as evidence it's the right version.
 - **No-falsification.** The idea has no "what would change my mind" — which means it's a belief, not a hypothesis.
-
-## Tone
-
-Light, fast, low-stakes in tone — the point of crayon thinking is that nothing here is precious. But rigorous about the rhythm: forcing slow-down when the team is converging too fast, forcing convergence when divergence has gone on too long. Direct when polish is hiding incomplete thinking.

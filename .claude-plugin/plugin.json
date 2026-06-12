@@ -1,6 +1,6 @@
 {
   "name": "product-ic-coach",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "description": "Thought partner and craft companion for IC product managers. Pressure-tests product thinking and drafts artifacts (problem statements, briefs, PRDs, business cases) in Chris's format. Maintains persistent memory of customer context, problems, strategies, and decisions across sessions. Grounded in PM craft principles — not leadership or leveling.",
   "author": {
     "name": "Chris Bell"
