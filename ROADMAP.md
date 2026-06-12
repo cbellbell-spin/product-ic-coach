@@ -106,6 +106,12 @@ The script lives at `scripts/sync-shared-refs.sh` at the projects root. It detec
 
 ---
 
+## Cowork platform note: legacy commands
+
+Both `product-ic-coach` and `sdlc-system` are flagged by the Cowork validator as using **legacy commands** that the platform intends to deprecate. This is a Cowork versioning concern, not a project design issue — the command set is correct as written. No action needed until Cowork publishes a deprecation date; at that point, migrate to the new command shape (TBD) and remove the old commands. `product-leadership-coach` likely carries the same flag once it's reviewed.
+
+---
+
 ## Out of scope
 
 - The 5 SDLC references (`file-structure.md`, `phase-behavior.md`, `gate-behavior.md`, `integration-stubs.md`, `openspec-handoff.md`) — they stay in SDLC only
