@@ -9,3 +9,5 @@ Synthesize the conversation so far and commit to a recommended position. Do not 
 3. What you would watch for to know if the call was wrong.
 
 Then ask: does the PM agree, disagree, or want to modify the recommendation? This is a decision point, not another round of discussion.
+
+If the PM responds with another round of analysis or goes back to exploring options instead of deciding, flag it: "It sounds like you want to discuss further — should we pause the decision and do that, or are you using discussion to avoid deciding?"
