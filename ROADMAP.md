@@ -25,11 +25,11 @@ Two reference files exist identically in both `product-ic-coach` and `product-le
 
 This avoids a fourth package while keeping the source of truth in one place. The two reference docs unique to leadership (`leading-a-product-org.md`, `pm-leveling-framework.md`) stay where they are — not shared.
 
-### SDLC reads from `~/Documents/pm-coach/`
+### SDLC reads from the workspace `pm-coach/` folder
 
 The three plugins form a system. They should be able to share knowledge across tool boundaries.
 
-**The IC coach writes to a tree under `~/Documents/pm-coach/`:**
+**The IC coach writes to a tree under the workspace `pm-coach/` folder:**
 
 - `customer-context/<slug>/profile.md`, `log.md`
 - `problems/<slug>/problem-statement.md`, `notes.md`, `links.md`
@@ -37,7 +37,7 @@ The three plugins form a system. They should be able to share knowledge across t
 
 **The SDLC system should read from this tree as an input source.** Concretely, the SDLC's Phase 1A (Opportunity Brief) should:
 
-1. Before drafting, check if `~/Documents/pm-coach/customer-context/<segment>/profile.md` exists for the segment in play
+1. Before drafting, check if `customer-context/<segment>/profile.md` exists in the workspace for the segment in play
 2. If yes, surface what's known and link to it from the Opportunity Brief's customer-context section
 3. If the segment is named but no profile exists, suggest the PM capture context first via `product-ic-coach`'s `customer-understanding` skill
 4. Reference, don't duplicate — the Opportunity Brief links, doesn't inline
@@ -48,7 +48,7 @@ The three plugins form a system. They should be able to share knowledge across t
 
 **Implications for the SDLC system:**
 - `phase-behavior.md` Phase 1A section needs a "Cross-Plugin Read" block
-- `file-structure.md` should document the `~/Documents/pm-coach/` tree as an *input source* alongside the per-initiative folder
+- `file-structure.md` should document the workspace `pm-coach/` tree as an *input source* alongside the per-initiative folder
 - New entry in `_state.md` schema: "Customer-context anchors" listing the pm-coach paths that informed this initiative
 - The SDLC's `pd-new` command should ask "Is there an existing customer-context profile or problem statement in pm-coach to anchor this to?"
 
