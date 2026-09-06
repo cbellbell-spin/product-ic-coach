@@ -88,7 +88,7 @@ Each problem slug carries three persistent artifacts that survive across session
 - **`decisions.md`** — append-only editorial log: what was settled, what was rejected and why, what remains open. Written via `/close` at session end.
 - **`problem-statement.md`** — the output artifact (produced by the `problem-statement` skill when ready).
 
-These live at `~/Documents/pm-coach/problems/<slug>/`.
+These live at `problems/<slug>/`.
 
 ### Session-Start Auto-Open
 
@@ -105,7 +105,9 @@ If no slug can be resolved (genuinely new problem, no prior history), proceed no
 
 ### Plugin Memory Rules
 
-Specialized skills read and write to `~/Documents/pm-coach/`. The umbrella does not produce artifacts itself, but surfaces relevant existing files at session start.
+Specialized skills read and write to the workspace `pm-coach/` folder. The umbrella does not produce artifacts itself, but surfaces relevant existing files at session start.
+
+Resolve that folder using the procedure in `references/WORKSPACE.md` before any read or write. Every path below is relative to it. Never assume a local filesystem path — Cowork web and mobile have no filesystem, and the old `~/Documents/pm-coach/` location never existed on any machine, so nothing should be read from there.
 
 - **Read first, then engage.** Load relevant artifacts before pressing on with new questions.
 - **Update, don't duplicate.** When a slug/topic exists, update the canonical file rather than creating a new one.
@@ -163,7 +165,7 @@ Load these when relevant:
 - `references/pm-operating-manual.md` — PM craft principles (customer, ideas, strategy, written artifacts, prioritization, cross-functional, delivering value, running the business). Single source of truth for the standards being applied.
 - `references/working-with-me.md` — Operating principles and expectations for how PMs should think and work. Calibrates the standard.
 
-These are **philosophy memory** (the standards). The `~/Documents/pm-coach/` tree is **project memory** (state of the work). Do not cite these reference docs by name — internalize the principles and use them inline ("you're treating a symptom as a problem").
+These are **philosophy memory** (the standards). The workspace `pm-coach/` tree is **project memory** (state of the work). Do not cite these reference docs by name — internalize the principles and use them inline ("you're treating a symptom as a problem").
 
 ---
 

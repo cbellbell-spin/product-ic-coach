@@ -29,7 +29,7 @@ Uses the umbrella's Phase 1 → Phase 2 → Land mechanics, scoped to problem de
 
 ## Lens-specific Read first
 
-Identify the customer / segment in play. Check `~/Documents/pm-coach/customer-context/<slug>/` for the relevant profile and recent log entries. If a `problems/<slug>/` folder already exists for this problem, read `problem-statement.md`, `notes.md`, and `links.md`. If neither exists, surface that gap: *"I don't see existing context for this customer in the repository. Want to capture that first via `customer-understanding`, or proceed and we'll capture context inline?"*
+Identify the customer / segment in play. Check `customer-context/<slug>/` for the relevant profile and recent log entries. If a `problems/<slug>/` folder already exists for this problem, read `problem-statement.md`, `notes.md`, and `links.md`. If neither exists, surface that gap: *"I don't see existing context for this customer in the repository. Want to capture that first via `customer-understanding`, or proceed and we'll capture context inline?"*
 
 ## Lens-specific Phase 1 questions
 
@@ -56,7 +56,7 @@ When `/land` is invoked: state the sharpest version of the problem, the customer
 ## Memory paths
 
 ```
-~/Documents/pm-coach/problems/<slug>/
+problems/<slug>/
 ├── problem-statement.md      # canonical
 ├── notes.md                  # append-only thinking log
 └── links.md                  # cross-refs (customer-context, strategy, brief, PRDs)

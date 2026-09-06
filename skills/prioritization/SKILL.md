@@ -29,7 +29,7 @@ Uses the umbrella's Phase 1 → Phase 2 → Land mechanics, scoped to ranking in
 
 ## Lens-specific Read first
 
-If a prioritization snapshot for this context exists in `~/Documents/pm-coach/prioritization/`, read the most recent one. Snapshots are append-only — stack ranks decay fast and the history of what we chose to do (and didn't) is useful signal. Surface the prior ranking and ask what's changed.
+If a prioritization snapshot for this context exists in `prioritization/`, read the most recent one. Snapshots are append-only — stack ranks decay fast and the history of what we chose to do (and didn't) is useful signal. Surface the prior ranking and ask what's changed.
 
 Also read relevant `briefs/<area>/product-brief.md` (if applicable) and `customer-context/` entries for the segments the items affect — prioritization that floats free of customer context is usually wrong.
 
@@ -133,7 +133,7 @@ Items that were considered and are explicitly NOT in scope this round:
 ## Memory paths
 
 ```
-~/Documents/pm-coach/prioritization/
+prioritization/
 └── <yyyy-mm-dd>-<context>/
     └── snapshot.md       # one snapshot per round; do NOT overwrite prior
 ```

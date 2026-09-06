@@ -28,7 +28,7 @@ Uses the umbrella's Phase 1 → Phase 2 → Land mechanics, scoped to early-stag
 
 ## Lens-specific Read first
 
-If a problem slug is already in the conversation, check `~/Documents/pm-coach/problems/<slug>/notes.md` for prior shaping. Pre-graduation crayon explorations live under an "Early shapes" header in that file.
+If a problem slug is already in the conversation, check `problems/<slug>/notes.md` for prior shaping. Pre-graduation crayon explorations live under an "Early shapes" header in that file.
 
 If no slug exists yet, this is pre-graduation territory. Capture inline; once an idea graduates into a problem worth statement-ing, hand off to `problem-statement` (which creates `problems/<slug>/`).
 

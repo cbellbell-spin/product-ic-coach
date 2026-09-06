@@ -33,7 +33,7 @@ Uses the umbrella's Phase 1 → Phase 2 → Land mechanics, scoped to customer u
 
 ## Lens-specific Read first
 
-Check `~/Documents/pm-coach/customer-context/` for an existing folder matching the segment or account in play. If present, read `profile.md` (canonical) and the most recent entries in `log.md` (append-only history). Surface what's already known in your first response so the PM doesn't re-state it. If absent, confirm the segment/account name and create the folder when drafting.
+Check `customer-context/` for an existing folder matching the segment or account in play. If present, read `profile.md` (canonical) and the most recent entries in `log.md` (append-only history). Surface what's already known in your first response so the PM doesn't re-state it. If absent, confirm the segment/account name and create the folder when drafting.
 
 ## Lens-specific Phase 1 questions
 
@@ -60,7 +60,7 @@ When `/land` is invoked: state the strongest version of what we know, what's sti
 ## Memory paths
 
 ```
-~/Documents/pm-coach/customer-context/
+customer-context/
 └── <segment-or-account-slug>/
     ├── profile.md            # canonical, revised in-place; git history is the version log
     └── log.md                # append-only entries with provenance
@@ -68,7 +68,7 @@ When `/land` is invoked: state the strongest version of what we know, what's sti
 
 **Naming**: prefer segment-level folders for the broad picture (e.g., `mid-market-fintech/`). Add per-account folders for marquee customers when they warrant their own context (e.g., `acme-corp/`). When unsure, ask the PM.
 
-If `~/Documents/pm-coach/` doesn't exist yet, this skill is allowed to create the directory tree on first write. Confirm with the PM before creating the directory if no other artifacts exist there yet.
+If `customer-context/` doesn't exist yet inside the workspace `pm-coach/` folder, this skill may create it on first write — resolve the workspace first per `references/WORKSPACE.md`, then create subfolders within it. Never create the workspace root itself; if it cannot be resolved, say so and stop rather than writing to a guessed location.
 
 **`profile.md` template:**
 

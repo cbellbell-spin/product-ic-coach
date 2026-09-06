@@ -33,7 +33,7 @@ Run this before ending any coaching session on a named problem. Can be user-invo
 
    If nothing decision-worthy happened (exploratory session, stuck in Phase 1), say so directly: "Nothing decision-worthy to log — this was an exploratory session. That's fine, but it might mean the brief needs sharpening."
 
-4. **Wait for confirmation or edits.** The PM may correct, remove, or add entries. Once confirmed, append the approved block to `~/Documents/pm-coach/problems/<slug>/decisions.md`.
+4. **Wait for confirmation or edits.** The PM may correct, remove, or add entries. Once confirmed, append the approved block to `problems/<slug>/decisions.md`.
 
 5. **Ask about brief.md.** One question: "Does the brief need updating — did the scope or working hypothesis shift?" If yes, propose specific edits to `brief.md` and confirm before writing. If no, close without touching it.
 

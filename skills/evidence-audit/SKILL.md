@@ -28,7 +28,7 @@ Uses the umbrella's Phase 1 → Phase 2 → Land mechanics, scoped to evidence q
 
 ## Lens-specific Read first
 
-Identify which artifact the evidence belongs to. If `~/Documents/pm-coach/problems/<slug>/notes.md` (or the equivalent for whatever artifact is in play) exists, read it for prior evidence work.
+Identify which artifact the evidence belongs to. If `problems/<slug>/notes.md` (or the equivalent for whatever artifact is in play) exists, read it for prior evidence work.
 
 This skill **does not own its own folder.** It appends a dated audit entry into the `notes.md` of whichever artifact is being scrutinized.
 

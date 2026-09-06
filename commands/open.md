@@ -8,11 +8,11 @@ Session-start ritual for a problem that has prior history. Loads the Mann artifa
 
 ### Behavior
 
-1. **Resolve the slug.** If the PM provides one (e.g., `/open retention-workflow-q3`), use it directly. If they reference a problem by name without a slug, check `~/Documents/pm-coach/INDEX.md` to find the matching slug. If ambiguous, show the closest matches and ask.
+1. **Resolve the slug.** If the PM provides one (e.g., `/open retention-workflow-q3`), use it directly. If they reference a problem by name without a slug, check `INDEX.md` to find the matching slug. If ambiguous, show the closest matches and ask.
 
-2. **Read `brief.md`.** Located at `~/Documents/pm-coach/problems/<slug>/brief.md`. This is the coaching spec — what we're trying to figure out, current working hypothesis, constraints, open questions. If it doesn't exist, create a stub (see Scaffold below) and prompt the PM to fill it.
+2. **Read `brief.md`.** Located at `problems/<slug>/brief.md`. This is the coaching spec — what we're trying to figure out, current working hypothesis, constraints, open questions. If it doesn't exist, create a stub (see Scaffold below) and prompt the PM to fill it.
 
-3. **Read `decisions.md`.** Located at `~/Documents/pm-coach/problems/<slug>/decisions.md`. Scan for what's settled, what's been rejected and why, and what's explicitly marked open. If it doesn't exist, create an empty one.
+3. **Read `decisions.md`.** Located at `problems/<slug>/decisions.md`. Scan for what's settled, what's been rejected and why, and what's explicitly marked open. If it doesn't exist, create an empty one.
 
 4. **Surface state in 3–4 sentences.** Synthesize the two files into a brief, specific orientation — not a recitation. Lead with where things broke off; name what's live and what's settled. Example:
 
@@ -22,7 +22,7 @@ Session-start ritual for a problem that has prior history. Loads the Mann artifa
 
 ### Scaffold — if brief.md doesn't exist
 
-Create `~/Documents/pm-coach/problems/<slug>/brief.md` with this template and ask the PM to fill it now or confirm they'll fill it later:
+Create `problems/<slug>/brief.md` with this template and ask the PM to fill it now or confirm they'll fill it later:
 
 ```markdown
 # Brief: <slug>
@@ -40,7 +40,7 @@ Create `~/Documents/pm-coach/problems/<slug>/brief.md` with this template and as
 <!-- The 2–3 things blocking a clear position. -->
 ```
 
-Also create an empty `~/Documents/pm-coach/problems/<slug>/decisions.md` with header:
+Also create an empty `problems/<slug>/decisions.md` with header:
 
 ```markdown
 # Decisions Log: <slug>
