@@ -107,7 +107,7 @@ If no slug can be resolved (genuinely new problem, no prior history), proceed no
 
 Specialized skills read and write to the workspace `pm-coach/` folder. The umbrella does not produce artifacts itself, but surfaces relevant existing files at session start.
 
-Resolve that folder using the procedure in `references/WORKSPACE.md` before any read or write. Every path below is relative to it. Never assume a local filesystem path — Cowork web and mobile have no filesystem, and the old `~/Documents/pm-coach/` location never existed on any machine, so nothing should be read from there.
+Use the folder this session is connected to; that always wins. If none was given, resolve one using the procedure in `references/WORKSPACE.md`. Every path below is relative to the resolved folder. The old `~/Documents/pm-coach/` location never existed on any machine — nothing should be read from there.
 
 - **Read first, then engage.** Load relevant artifacts before pressing on with new questions.
 - **Update, don't duplicate.** When a slug/topic exists, update the canonical file rather than creating a new one.
